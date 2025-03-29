@@ -1,0 +1,30 @@
+### change person by id
+PUT http://localhost:8080/person/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "email": "tom@gmail.com",
+  "phone": "75644",
+  "firstName": "Tom",
+  "lastName": "Smith"
+}
+
+### create new person
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "email": "el@gmail.com",
+  "phone": "0987654321",
+  "firstName": "El",
+  "lastName": "River"
+}
+
+###
+DELETE http://localhost:8080/person/4
+Content-Type: application/json
+
+###
+GET http://localhost:8080/person
+Content-Type: application/json
